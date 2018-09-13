@@ -1,0 +1,13 @@
+.contentContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+width: 460px;
+margin-top: 100px;
+}
+
+.high-light{
+    color:  rgb(255, 0, 51);
+}

@@ -1,0 +1,35 @@
+.menuContainer {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: normal;
+    font-size: 18;
+    color: rgb(255, 255, 255);
+ 
+}
+
+.menu li {
+    margin-bottom: 20px;
+    height: 30px;
+    align-content: center;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.menu li:hover {
+    background-color: rgb(255, 0, 51);
+}
+
+#logo :hover {
+    background-color: rgb(255, 0, 51);
+}
+
+#logo {
+    margin-bottom: 40px;
+    
+}
+
+#logo svg {
+    padding-left: 10px;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+}

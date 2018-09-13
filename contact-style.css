@@ -1,0 +1,40 @@
+.info {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.info ul {
+
+
+}
+
+.info li {
+    margin-bottom: 15px;
+    height: 30px;
+    width: 30px;
+    align-content: center;
+
+ 
+}
+
+.info a {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+ 
+}
+
+.info svg {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px
+}

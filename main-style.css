@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by any browser but < IE9 */
+    /*  */
+
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+   /* background: rgb(20, 20, 20);*/
+    background: url("img-noise-361x370.png") fixed center;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: lighter;
+}
+
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1022px;
+}
+
+.menuContainer {
+    margin-top: 100px;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.contentContainer {
+    flex-grow: 8;
+    background-color: white;
+    height: 100%;
+}
+
+.contactInfoContainer {
+    margin-top: 100px;
+    flex-grow: 1;
+    height: 100%;
+}
