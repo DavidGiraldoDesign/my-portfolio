@@ -2,9 +2,10 @@ const svg = {
 
     getLogo: function getLogo() {
         var div = document.createElement("div");
+        div.className="col-12";
         div.innerHTML = ` 
                 <svg version="1.1" id="Capa_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="628.728px" height="585.5px" viewBox="0 0 628.728 585.5" enable-background="new 0 0 628.728 585.5" xml:space="preserve">
+                    width="60px" height="60px" viewBox="0 0 628.728 585.5" enable-background="new 0 0 628.728 585.5" xml:space="preserve">
             <circle fill="#FFFFFF" cx="292" cy="292" r="28.884"/>
             <path fill="#FFFFFF" d="M338.17,585.5H0v-586h338.17c51.542,0,99.631,13.092,144.263,39.27
                 c44.624,26.184,80.167,61.721,106.618,106.62c26.452,44.902,39.676,93.665,39.676,146.294c0,39.882-7.8,78-23.398,114.352

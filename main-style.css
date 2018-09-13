@@ -23,10 +23,9 @@
 }
 
 body {
-   /* background: rgb(20, 20, 20);*/
+
     background: url("img-noise-361x370.png") fixed center;
-    display: flex;
-    justify-content: center;
+    
 }
 
 ul {
@@ -35,33 +34,27 @@ ul {
     padding: 0;
 }
 
-p{
-    font-family: 'Didact Gothic', sans-serif;
-    font-weight: lighter;
-}
-
 
 .mainContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 1022px;
+    margin-left: 16.66%;
+
 }
 
-.menuContainer {
-    margin-top: 100px;
-    flex-grow: 1;
-    height: 100%;
+.menuContainer {    
+    position: fixed;
+    left: 0;    
+    
 }
 
 .contentContainer {
-    flex-grow: 8;
-    background-color: white;
-    height: 100%;
+    background: white;
+    margin-left: 8.33%;
+    overflow: hidden;
+    
 }
 
 .contactInfoContainer {
-    margin-top: 100px;
-    flex-grow: 1;
-    height: 100%;
+   right: 0;
+   position: fixed;    
+    
 }

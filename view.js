@@ -5,35 +5,33 @@ let vista = {
 
     getMenuContainer: function getMenuContainer() {
         let div = document.createElement('div');
-        div.className = 'menuContainer';
-        div.innerHTML = `
-                        <div class= "menu">
-                        <div id="logo"></div>
-                            <ul>
-                                <li>Profile</li>
-                                <li>Portfolio</li>
-                                <li>Contact</li>
-                                <li>Education</li>
-                                <li>Awards / Honors</li>
-                                <li>Work experience</li>
-                                <li>Language skills</li>
-                                <li>Data of interest</li>
-                            </ul>
+        div.className = 'col-2 menuContainer';
+        div.innerHTML = `                        
+      
+                        <div class= "col-12 menu">
+                        <div id="logo">
+                        </div> 
+                        <ul>
+                               <li>Profile</li>
+                               <li>Portfolio</li>
+                               <li>Contact</li>
+                               <li>Education</li>
+                               <li>Awards / Honors</li>
+                               <li>Work experience</li>
+                               <li>Language skills</li>
+                               <li>Data of interest</li>
+                             </ul>
                         </div>
                         `;
         div.querySelector('#logo').appendChild(svg.getLogo());
-
-
         return div;
     },
 
     getContentContainer: function getMenuContainer() {
         let div = document.createElement('div');
-        div.className = 'contentContainer';
+        div.className = 'col-10 contentContainer';
         div.innerHTML = `
-                            <div class="content">
-                     
-                            
+                            <div class="col-12 content">
                             </div>
                         `;
 
@@ -44,29 +42,32 @@ let vista = {
 
     getContactInfoContainer: function getContactInfoContainer() {
         let div = document.createElement('div');
-        div.className = 'contactInfoContainer';
+        div.className = 'col-2 contactInfoContainer';
         div.innerHTML = `
-                        <dvi class="info">
-                            <ul>
-                                <li><a id="behance"  href="https://www.behance.net/JoseDavidGiraldoM" target="_blank"></a></li>
-                                <li><a id="github"   href="https://github.com/josedavidgm1995" target="_blank"></a></li>
-                                <li><a id="linkedin" href="https://www.linkedin.com/in/josedavidgiraldom/" target="_blank"></a></li>
-                                <li><a id="instagram" href="https://www.instagram.com/_david.giraldo/" target="_blank"></a></li>
-                                
-                            </ul>
-                            <div class = "contact">
-                            <p>Caney - Cra 85B # 33-84 <br>
-                            Cali, Valle del Cauca.<br>
-                            cell number: 316 278 9945 <br>
-                            josedavidgm1995@gmail.com</p>
-                            <br>
-                            <br>
-                            <p>
-                            From Colombia <br>
-                            with love - 2018
-                            </p>
+                            <div class= "col-12 info">
+                                <div class="social">
+                                    <ul>
+                                        <li><a id="behance"  href="https://www.behance.net/JoseDavidGiraldoM" target="_blank"></a></li>
+                                        <li><a id="github"   href="https://github.com/josedavidgm1995" target="_blank"></a></li>
+                                        <li><a id="linkedin" href="https://www.linkedin.com/in/josedavidgiraldom/" target="_blank"></a></li>
+                                        <li><a id="instagram" href="https://www.instagram.com/_david.giraldo/" target="_blank"></a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class ="contact">
+                                    <p>
+                                    Cali, Valle del Cauca.<br>
+                                    cell number: 316 278 9945 <br>
+                                    josedavidgm1995@gmail.com</p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                    From Colombia <br>
+                                    with love - 2018
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        
                         `;
 
         let b = div.querySelector('#behance');
@@ -83,7 +84,7 @@ let vista = {
 
     getMainContainer: function getMainContainer() {
         let div = document.createElement('div');
-        div.className = 'mainContainer';
+        div.className = 'col-8 mainContainer';
         div.appendChild(this.getMenuContainer());
         div.appendChild(this.getContentContainer());
         div.appendChild(this.getContactInfoContainer());

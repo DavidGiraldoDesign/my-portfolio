@@ -1,11 +1,18 @@
-.contentContainer{
-    display: flex;
-    justify-content: center;
+.content{
+    padding: 100px;
+    overflow: hidden;
 }
 
-.content{
-width: 460px;
-margin-top: 100px;
+.content p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: lighter;
+}
+.content h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color:  rgb(255, 0, 51);
+    font-size: 12;
+    margin-bottom: 30px;
 }
 
 .high-light{
