@@ -7,11 +7,13 @@
     font-family: 'Didact Gothic', sans-serif;
     font-weight: lighter;
     padding-left: 30px;
-    color: rgb(50,50,50);
+    color: rgb(50, 50, 50);
 }
-#monitor{
+
+#monitor {
     padding-left: 0;
 }
+
 #tale {
     color: gray;
     padding-left: 80px;
@@ -20,7 +22,6 @@
 .content h1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
-    
     color: rgb(255, 0, 51);
     /*color: whitesmoke;*/
     font-size: 18px;
@@ -44,12 +45,69 @@ a:visited {
     text-decoration: none;
     cursor: hand;
 }
-#icesi-link{
+
+#icesi-link {
     color: white;
 }
+
 a:link:active,
 a:visited:active {
     color: rgb(255, 0, 51);
+}
+
+/*-------------------------------------*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+
+  }
+.container {
+    position: relative;
+
+  }
+  
+  .image {
+    display: block;
+    width: 500px;
+    height: auto;
+    border-radius: 250px;
+    border: solid 1px rgb(20,20,20);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: auto;
+    border-radius: 250px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color:rgba(20,20,20,0.9);
+  
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text p{
+    color: grey;
+    font-size: 16px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    height: 100%;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+/*-----------------------------------*/
+
+.awards img {
+    padding: 5px;
+    margin-bottom: 30px;
 }
 
 /*----------------------------------*/
@@ -73,10 +131,10 @@ a:visited:active {
     width: 190px;
     height: 140px;
     margin: 5px;
-
-    -webkit-transition-property: width, height; /* Safari */
-    -webkit-transition-duration: 0.5s; /* Safari */
-
+    -webkit-transition-property: width, height;
+    /* Safari */
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
     transition-property: width, height;
     transition-duration: 0.5s;
 }
@@ -95,6 +153,4 @@ a:visited:active {
 #process iframe {
     width: 560px;
     height: 315px;
-  
 }
-

@@ -11,26 +11,26 @@ margin: 50px;
 
 
 .menu li {
-    position: relative;
+    /*position: relative;*/
     margin-bottom: 20px;
     height: 30px;
     align-content: center;
     padding-left: 10px;
     padding-top: 5px;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0);
 }
 
 .menu li:hover {
     background-color: rgb(255, 0, 51);
 }
 
-#logo :hover {
-    background-color: rgb(255, 0, 51);
-}
 
 #logo{
     margin-bottom: 80px;
+   
+   
+   height: 70px;
+  
 }
-#logo svg {
-margin: 0;
-padding: 0;
-}   
+ 

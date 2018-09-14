@@ -9,13 +9,12 @@ let vista = {
         div.innerHTML = `                        
       
                         <div class= "col-12 menu">
-                        <div id="logo">
-                        </div> 
+                        
                         <ul>
+                            <li id="logo"></li>
                                <li>Profile</li>
                                <li>Portfolio</li>
-                               <li>Education</li>
-                               <li>Awards / Honors</li>
+                               <li>Education / Awards / Honors</li>
                                <li>Work experience</li>
                                <li>Data of interest</li>
                              </ul>
@@ -104,9 +103,12 @@ let vista = {
         return div;
     },
 
-    render: function render() {
+    render: function render(intro) {
         console.log("Hi there, welcome to my code");
         this.body.appendChild(this.getMainContainer());
+        let content =  this.body.querySelector('.content');
+     
+        content.appendChild(intro);
 
     },
 

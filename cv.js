@@ -1,5 +1,25 @@
 let cv = {
 
+    getIntro: function getIntro() {
+        var div = document.createElement("div");
+        div.innerHTML = `
+<div class="flex-container">
+        <div class="container">
+        <img src="assets/me.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+          <p>Several years ago, during a field trip to a company, I had a conversation with my former design dean at Icesi University, where he told me that in order to follow my passion for design I had to be aware about how design is changing due to the trends and technological advances and look out for Design Studios abroad, where they believe in a truthful way that design can improve people way of living. 
+          <br>
+          <br>-To him, thank you.</p>
+          </div>
+        </div>
+      </div>
+  </div>      
+        
+
+   `
+        return div;
+    },
     getProfile: function getProfile() {
         var div = document.createElement("div");
         div.innerHTML = `
@@ -71,40 +91,40 @@ let cv = {
         div.innerHTML = `
                 
         <h1>University (undergraduate student) since 2012 - to date:</h1>
-        <br>
         <p>
         Industrial Design - IX semester
         <br>
         Interactive Media Design - IX semester
-        <p>
+        <p><br>
+        <h1>Academic: Honor student due to an outstanding performance in:</h1>
+        <p>Industrial Design (January - 2016, August - 2015, January - 2014, August - 2014).<br>
+        Interactive Media Design (January - 2017).</p>
         <br>
         <h1>Certifications:</h1>
         <p>Design Kit: Prototyping, provided by +Acumen and IDEO.org (2018).
         <br>
         SolidWorks Associate - Mechanical Design (2014).
         </p>
-
-   `
-        return div;
-    },
-    getAwards: function getAwards() {
-        var div = document.createElement("div");
-        div.innerHTML = `
-        
+        <br>
         <h1>Non - academic: Appreciation & Contest:</h1>
-        <p>Behance Appreciation Award Coin in product design (2016).
-        <br>
-        MASISA Student Design Contest (2016) - 3º Place in Colombia and a special mention in design presentation skills.
-        <br>
-        PAVCO Student Design Contest #DiseñaConPavco - 1º Place (2015).
-        </p>
-        <br>
-        <h1>Academic: Honor student due to an outstanding performance in:</h1>
-        <p>
-        Industrial Design (January - 2016, August - 2015 ,January - 2014, August - 2014).
-        <br>
-        Interactive Media Design (January - 2017).
-        </p>
+        
+                    <div class="awards col-12">
+                    <img class="col-4" src="assets/1.jpg" alt="b">
+                    <img class="col-4" src="assets/2.jpg" alt="b">
+                    <img class="col-4" src="assets/3.jpg" alt="b">
+                    </div>
+        
+              
+                <p>Behance Appreciation Award Coin in product design (2016).
+                <br>
+                <br>
+                MASISA Student Design Contest (2016) - 3º Place in Colombia and a special mention in design presentation skills.
+                <br>
+                <br>
+                PAVCO Student Design Contest #DiseñaConPavco - 1º Place (2015).
+                </p>
+                <br>
+          
 
    `
         return div;
