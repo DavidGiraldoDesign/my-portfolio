@@ -21,7 +21,7 @@ let vista = {
 
                         <a id="p5" href="https://josedavidgm1995.github.io/particle-ecosystem/" target="_blank">
                         <p>
-                        Do you have time to play?
+                        Do you have time to play? <br>Then click me.
                         </p>
                         <a>    
                         </div>
@@ -76,7 +76,9 @@ let vista = {
                                     Cali - Colombia - South America<br>
                                     cell number: (57) 316 278 9945 <br>
     
-                                    josedavidgm1995@gmail.com</p>
+                                    josedavidgm1995@gmail.com<br>
+                                    JOSE DAVID GIRALDO M.
+                                    </p>
                                     <br>
                                     <br>
                                     <p>

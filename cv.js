@@ -8,7 +8,7 @@ let cv = {
         <img src="assets/me.png" alt="Avatar" class="image">
         <div class="overlay">
           <div class="text">
-          <p>Several years ago, during a field trip to a company, I had a conversation with my former design dean at Icesi University, where he told me that in order to follow my passion for design I had to be aware about how design is changing due to the trends and technological advances and look out for Design Studios abroad, where they believe in a truthful way that design can improve people way of living. 
+          <p>"Several years ago, during a field trip to a company, I had a conversation with my former design dean at Icesi University, where he told me that in order to follow my passion for design I had to be aware about how design is changing due to the trends and technological advances and look out for Design Studios abroad, where they believe in a truthful way that design can improve people way of living." 
           <br>
           <br>-To him, thank you.</p>
           </div>
@@ -51,16 +51,8 @@ let cv = {
     getPortfolio: function getPortfolio() {
         var div = document.createElement("div");
         div.innerHTML = ` 
-                        <h1>Know my Desgin process</h1>
-                        <br>
-                        <div id="process">
-    
-                            <iframe  src="https://www.youtube-nocookie.com/embed/g6idU-GWSxA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                       
-                        </div>
-                        <br>
+                        
                         <h1>Know more about my work on Behance</h1>
-                        <br>
                         <div class="projects">
                             <a href="https://www.behance.net/gallery/31805579/BeoPlay-S1-A2-Bang-Olufsen" target="_blank">
                             <img src="assets/a.png" alt="bang"> </a>
@@ -81,6 +73,15 @@ let cv = {
                             <a href="https://www.behance.net/gallery/32509367/Lets-race" target="_blank">
                             <img src="assets/i.png" alt="race" > </a> 
                         </div>  
+                        <br>
+                        <h1>Know my Desgin process</h1>
+                        <br>
+                        <div id="process">
+    
+                            <iframe  src="https://www.youtube-nocookie.com/embed/g6idU-GWSxA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       
+                        </div>
+                        <br>
                         
                         `
                         
