@@ -14,7 +14,6 @@ let vista = {
                         <ul>
                                <li>Profile</li>
                                <li>Portfolio</li>
-                               <li>Contact</li>
                                <li>Education</li>
                                <li>Awards / Honors</li>
                                <li>Work experience</li>
@@ -23,6 +22,17 @@ let vista = {
                              </ul>
                         </div>
                         `;
+
+
+        let items = div.querySelectorAll('li');
+
+        items.forEach((element, index) => {
+            element.addEventListener('click', e => {
+                this.onChange(index);
+            });
+
+        });
+
         div.querySelector('#logo').appendChild(svg.getLogo());
         return div;
     },
@@ -35,7 +45,7 @@ let vista = {
                             </div>
                         `;
 
-        div.querySelector('.content').appendChild(work.getWork());
+        //div.querySelector('.content').appendChild(cv.getWork());
 
         return div;
     },
@@ -91,9 +101,17 @@ let vista = {
         return div;
     },
 
-    render: function render(logo) {
+    render: function render() {
         console.log("Hi there, welcome to my code");
-        this.body.appendChild(this.getMainContainer(logo));
+        this.body.appendChild(this.getMainContainer());
+
+    },
+
+    renderContent: function renderContent(newContent) {
+        let content =  this.body.querySelector('.content');
+        content.innerHTML = '';
+        content.appendChild(newContent);
+
 
     },
 

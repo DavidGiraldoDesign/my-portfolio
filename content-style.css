@@ -6,15 +6,61 @@
 .content p {
     font-family: 'Didact Gothic', sans-serif;
     font-weight: lighter;
+    padding-left: 30px;
+}
+
+#tale{
+color: gray;
+padding-left: 80px;
 }
 .content h1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
     color:  rgb(255, 0, 51);
-    font-size: 12;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
+.content h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    color:  rgb(255, 0, 51);
+    font-size: 15px;
+}
 .high-light{
     color:  rgb(255, 0, 51);
 }
+
+a:link, a:visited { 
+    color:  rgb(255, 0, 51);
+    text-decoration: none;
+    cursor: hand;
+}
+
+a:link:active, a:visited:active { 
+    color:  rgb(255, 0, 51);
+}
+
+/*----------------------------------*/
+
+.project-card{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.projects{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: DodgerBlue;
+}
+
+.projects > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
