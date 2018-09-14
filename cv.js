@@ -173,7 +173,7 @@ let cv = {
             Spanish as a native language
             <br>
             <br>
-            English level B2
+            English level B2 (Common european framework).
             </p>
             <br>
 
