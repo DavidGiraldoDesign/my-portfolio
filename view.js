@@ -18,11 +18,17 @@ let vista = {
                                <li>Work experience</li>
                                <li>Data of interest</li>
                              </ul>
+
+                        <a id="p5" href="https://josedavidgm1995.github.io/particle-ecosystem/" target="_blank">
+                        <p>
+                        Do you have time to play?
+                        </p>
+                        <a>    
                         </div>
                         `;
 
 
-        let items = div.querySelectorAll('li');
+        let items = div.querySelectorAll('.menu li');
 
         items.forEach((element, index) => {
             element.addEventListener('click', e => {
@@ -106,14 +112,18 @@ let vista = {
     render: function render(intro) {
         console.log("Hi there, welcome to my code");
         this.body.appendChild(this.getMainContainer());
-        let content =  this.body.querySelector('.content');
-     
+        let content = this.body.querySelector('.content');
         content.appendChild(intro);
+
+        let item = vista.body.querySelector('.menu li');
+        item.style.backgroundColor = "rgb(255, 0, 51)";
+        item.style.boxShadow = "0px 5px 5px rgb(20,20,20)";
+
 
     },
 
     renderContent: function renderContent(newContent) {
-        let content =  this.body.querySelector('.content');
+        let content = this.body.querySelector('.content');
         content.innerHTML = '';
         content.appendChild(newContent);
 

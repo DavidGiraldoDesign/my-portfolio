@@ -24,8 +24,8 @@
 
 body {
 
-    /*background: url("img-noise-361x370.png") fixed center;*/
-    background-color: rgb(25, 25, 25);
+    background: url("img-noise-361x370.png") fixed center;
+    /*background-color: rgb(25, 25, 25);*/
 }
 
 ul {
@@ -50,9 +50,6 @@ ul {
 .contentContainer {
 
     margin-left: 8.33%;
-    
- 
-    
 }
 
 .contactInfoContainer {

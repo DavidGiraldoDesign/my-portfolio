@@ -24,7 +24,7 @@ let cv = {
         var div = document.createElement("div");
         div.innerHTML = `
                 
-        <p>
+        <p class="pro">
         I am an outgoing and active Industrial and Interactive Media Design student,  
         capable to work in collaborative environments, who is interested to belong to 
         a product design studio with a transparent and well constituted team. 
@@ -188,10 +188,13 @@ let cv = {
             <br>
         <h1>Graduation project for degree. Due date September 2019:</h1>
             <p>
-            Date: January 2018 - to date
+            Date: January 2018 - to date<br>
+            <br>
             Title: “Diseño de productos interactivos para el turismo accesible de personas ciegas dentro del acuario del Zoológico de Cali” - 
             <span class="high-light"> Interactive product design for accessible tourism for blind people visiting the aquarium at “The Cali Zoo”.</span>
-            <br>Keywords: HCI, HCI-4D, Accessibility, Universal design, Usability, UX
+            <br>
+            <br>
+            Keywords: HCI, HCI-4D, Accessibility, Universal design, Usability, UX
             </p>
 
    `

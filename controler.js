@@ -12,11 +12,21 @@ function controler (vista) {
 
     vista.onChange = (index) =>{
         vista.renderContent(funciones[index]);
-        if(index=='0'){
-            vista.body.querySelector('.contentContainer').style.background="none";
-        }else{
-            vista.body.querySelector('.contentContainer').style.background="white";
-        }
+
+        //background-color: rgb(255, 0, 51);
+        //box-shadow: 0px 5px 5px rgb(20,20,20);
+        let items = vista.body.querySelectorAll('.menu li');
+
+        items.forEach((e, i) => {
+            if(i==index){
+                e.style.backgroundColor="rgb(255, 0, 51)";
+                e.style.boxShadow="0px 5px 5px rgb(20,20,20)";
+            }else{
+                e.style.backgroundColor="rgba(255, 255, 51,0)";
+                e.style.boxShadow="none";
+            }
+        });
+       
     }
 
     vista.render(funciones[0]);
