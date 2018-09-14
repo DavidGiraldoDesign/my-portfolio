@@ -7,7 +7,6 @@ function controler (vista) {
         cv.getEducation(),
         cv.getAwards(),
         cv.getWork(),
-        cv.getLanguage(),
         cv.getData()
     ]   
 

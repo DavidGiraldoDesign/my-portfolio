@@ -1,4 +1,4 @@
-.content{
+.content {
     padding: 100px;
     overflow: hidden;
 }
@@ -7,16 +7,22 @@
     font-family: 'Didact Gothic', sans-serif;
     font-weight: lighter;
     padding-left: 30px;
+    color: rgb(50,50,50);
+}
+#monitor{
+    padding-left: 0;
+}
+#tale {
+    color: gray;
+    padding-left: 80px;
 }
 
-#tale{
-color: gray;
-padding-left: 80px;
-}
 .content h1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
-    color:  rgb(255, 0, 51);
+    
+    color: rgb(255, 0, 51);
+    /*color: whitesmoke;*/
     font-size: 18px;
     margin-bottom: 30px;
 }
@@ -24,43 +30,71 @@ padding-left: 80px;
 .content h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
-    color:  rgb(255, 0, 51);
+    color: rgb(255, 0, 51);
     font-size: 15px;
 }
-.high-light{
-    color:  rgb(255, 0, 51);
+
+.high-light {
+    color: rgb(255, 0, 51);
 }
 
-a:link, a:visited { 
-    color:  rgb(255, 0, 51);
+a:link,
+a:visited {
+    color: rgb(255, 0, 51);
     text-decoration: none;
     cursor: hand;
 }
-
-a:link:active, a:visited:active { 
-    color:  rgb(255, 0, 51);
+#icesi-link{
+    color: white;
+}
+a:link:active,
+a:visited:active {
+    color: rgb(255, 0, 51);
 }
 
 /*----------------------------------*/
 
-.project-card{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px black;
-}
-
-.projects{
+.projects {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
-    background-color: DodgerBlue;
 }
 
-.projects > div {
+.projects>div {
     background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-  }
+}
+
+.projects img {
+    width: 190px;
+    height: 140px;
+    margin: 5px;
+
+    -webkit-transition-property: width, height; /* Safari */
+    -webkit-transition-duration: 0.5s; /* Safari */
+
+    transition-property: width, height;
+    transition-duration: 0.5s;
+}
+
+.projects img:hover {
+    width: 195px;
+    height: 145px;
+}
+
+#process {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#process iframe {
+    width: 560px;
+    height: 315px;
+  
+}
+

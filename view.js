@@ -17,7 +17,6 @@ let vista = {
                                <li>Education</li>
                                <li>Awards / Honors</li>
                                <li>Work experience</li>
-                               <li>Language skills</li>
                                <li>Data of interest</li>
                              </ul>
                         </div>
@@ -42,6 +41,7 @@ let vista = {
         div.className = 'col-10 contentContainer';
         div.innerHTML = `
                             <div class="col-12 content">
+            
                             </div>
                         `;
 
@@ -66,8 +66,11 @@ let vista = {
                                 </div>
                                 <div class ="contact">
                                     <p>
-                                    Cali, Valle del Cauca.<br>
-                                    cell number: 316 278 9945 <br>
+                                    <a id="icesi-link" href="http://www.icesi.edu.co/" target="_blank">Icesi University </a>
+                                    <br>
+                                    Cali - Colombia - South America<br>
+                                    cell number: (57) 316 278 9945 <br>
+    
                                     josedavidgm1995@gmail.com</p>
                                     <br>
                                     <br>
