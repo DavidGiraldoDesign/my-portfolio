@@ -74,7 +74,7 @@ let cv = {
                             <img src="assets/i.png" alt="race" > </a> 
                         </div>  
                         <br>
-                        <h1>Know my Desgin process</h1>
+                        <h1>Know my Design process</h1>
                         <br>
                         <div id="process">
     
