@@ -54,24 +54,38 @@ let cv = {
                         
                         <h1>Know more about my work on Behance</h1>
                         <div class="projects">
-                            <a href="https://www.behance.net/gallery/31805579/BeoPlay-S1-A2-Bang-Olufsen" target="_blank">
-                            <img src="assets/a.png" alt="bang"> </a>
-                            <a href="https://www.behance.net/gallery/52866971/Hablame" target="_blank">
-                            <img src="assets/b.png" alt="talk" height="140" width="190"> </a>
-                            <a href="https://www.behance.net/gallery/31850193/Venus-Lamp-outdoor-luminary" target="_blank">
-                            <img src="assets/c.png" alt="lamp"> </a>
-                            <a href="https://www.behance.net/gallery/31931717/Be-a-child-again-Art-Toy" target="_blank">
-                            <img src="assets/d.png" alt="toy" > </a>
-                            <a href="https://www.behance.net/gallery/32147115/It-adapted-to-you-Furniture-Design-Competition" target="_blank">
-                            <img src="assets/e.png" alt="furniture" > </a>
-                            <a href="https://www.behance.net/gallery/30288287/ShellOils-Bottle-Design" target="_blank">
-                            <img src="assets/f.png" alt="bottle" > </a>
-                            <a href="https://www.behance.net/gallery/30281315/Axon-Manta-UTIII" target="_blank">
-                            <img src="assets/g.png" alt="manta" > </a>
-                            <a href="https://www.behance.net/gallery/30434043/My-SolidWorks-certification" target="_blank">
-                            <img src="assets/h.png" alt="car" > </a>
-                            <a href="https://www.behance.net/gallery/32509367/Lets-race" target="_blank">
-                            <img src="assets/i.png" alt="race" > </a> 
+                            <div class="viewable">
+                                 <img  src="assets/a.png" alt="bang">
+                            </div>
+                            <div class="viewable">
+                                <img src="assets/d.png" alt="toy" >
+                            </div>
+                            <div class="viewable">
+                                <img src="assets/e.png" alt="furniture" >
+                            </div>
+                            <div class="viewable">
+                                <img src="assets/f.png" alt="bottle" >
+                            </div>
+                            <div>
+                                <a href="https://www.behance.net/gallery/52866971/Hablame" target="_blank">
+                                <img src="assets/b.png" alt="talk" height="140" width="190"> </a>
+                            </div>
+                            <div>    
+                                <a href="https://www.behance.net/gallery/31850193/Venus-Lamp-outdoor-luminary" target="_blank">
+                                <img src="assets/c.png" alt="lamp"></a>
+                            </div>  
+                            <div>  
+                                <a href="https://www.behance.net/gallery/30281315/Axon-Manta-UTIII" target="_blank">
+                                <img src="assets/g.png" alt="manta" > </a>
+                            </div>
+                            <div>
+                                <a href="https://www.behance.net/gallery/30434043/My-SolidWorks-certification" target="_blank">
+                                <img src="assets/h.png" alt="car" > </a>
+                            </div>
+                            <div>    
+                                <a href="https://www.behance.net/gallery/32509367/Lets-race" target="_blank">
+                                <img src="assets/i.png" alt="race" > </a> 
+                            </div>
                         </div>  
                         <br>
                         <h1>Know my Design process</h1>
@@ -83,8 +97,19 @@ let cv = {
                         </div>
                         <br>
                         
-                        `
-                        
+                        `;
+                       
+        let viewableProjects = div.querySelectorAll('.viewable');
+
+        viewableProjects.forEach((element, index) => {
+            
+            element.addEventListener('click', e => {
+                console.log(e);
+                this.onShowProjectModalView(projects[index]);
+            });
+
+        });
+
         return div;
     },
     getEducation: function getEducation() {
@@ -130,7 +155,7 @@ let cv = {
    `
         return div;
     },
-   
+
     getWork: function getWork() {
         var div = document.createElement("div");
         div.innerHTML = `
@@ -199,9 +224,82 @@ let cv = {
             </p>
 
    `
-  
+
 
         return div;
     },
 
 };
+
+let bang = {
+    title: 'Bang & Olufsen',
+    photoA: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/2f301c31805579.5660ee6e52747.png',
+    photoB: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/345a9431805579.5660fac37adc6.png',
+    photoC: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0f449531805579.5660ee6e5d8f4.png',
+    tags: 'Industrial design',
+    info: `Is the evolution of the classic sound system. 
+    Thanks to a unique design, the S1 A2 has become the perfect 
+    furniture to create an exterior atmosphere for social 
+    gatherings. Inspired by the elegant and beauty of the 
+    Bang&Olufsen´s portfolio, I hope you enjoy Design.
+    <br><br>
+    Music and food always have come together around the place
+    where communities come together since immemorial times.
+    In this place they shared food, celebrated, and make rituals
+    with other people becoming a special moment for social interaction.
+    <br><br>
+    This inspired to created a piece of elegant furniture that
+    joins music, food, and outdoors, for that special social gatherings.`,
+    behanceRute: '31805579/BeoPlay-S1-A2-Bang-Olufsen'
+}
+
+let toy = {
+    title: 'Art Toy',
+    photoA: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0054d31931717.5667899699352.png',
+    photoB: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/0a094031931717.566789969c958.png',
+    photoC: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/38381031931717.566789969a450.png',
+    tags: 'Industrial design, ArtToy',
+    info: `We always want to play, by playing a game we can relax our
+    mind, think more clearly, and become more creative. I think;
+    you don't have to be a little boy to play in your free time, cause
+    a simple game as throwing away a paper ball with a catapult,
+    can be an interesting way to throw away all the bad feelings
+    of a stressful job situation.`,
+    behanceRute: '31931717/Be-a-child-again-Art-Toy'
+}
+
+let furniture = {
+    title: 'It adapted to you',
+    photoA: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/1eb43b32147115.5670ec503abbe.png',
+    photoB: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/30556b32147115.5670ed5bd6f8c.png',
+    photoC: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400/05fada32147115.5670ed5bd8032.png',
+    tags: 'Industrial design',
+    info: `It would not be awesome create and modify your
+    own furniture as you prefer ?.<br>
+    Sometimes furniture does not adapt to our needs,
+    and we have to adapt our space in order you use
+    our seats and bed.
+    <br>
+    <br>
+    What if you could change that ?
+    What if one furniture, offers you the possibility of
+    adapted to your own place?, no matter the size of your room.`,
+    behanceRute: '32147115/It-adapted-to-you-Furniture-Design-Competition'
+}
+
+let bottle = {
+    title: 'ShellOils Bottle Design',
+    photoA: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/c8c6f430288287.561c63e0e2f48.jpg',
+    photoB: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5cdff130288287.561c63e0de113.jpg',
+    photoC: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01e0b130288287.561c63e0dbcd4.jpg',
+    tags: 'Industrial design, packaging design',
+    info: `The aim of the project is to renovate the image of 
+    Shell Helix oils bottle, in order to not just create a new 
+    fresh design for them but to help them to achieve a more 
+    wide market. In this opportunity the inspiration design 
+    falls on the aesthetic of Ferrari and meaning of their 
+    brand; speed, beauty, strength, and a very good engine.`,
+    behanceRute: '30288287/ShellOils-Bottle-Design'
+}
+
+let projects = [bang, toy, furniture, bottle];

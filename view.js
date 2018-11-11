@@ -32,6 +32,7 @@ let vista = {
 
         items.forEach((element, index) => {
             element.addEventListener('click', e => {
+
                 this.onChange(index);
             });
 
@@ -73,9 +74,7 @@ let vista = {
                                     <p>
                                     <a id="icesi-link" href="http://www.icesi.edu.co/" target="_blank">Icesi University </a>
                                     <br>
-                                    Cali - Colombia - South America<br>
-                                    cell number: (57) 316 278 9945 <br>
-    
+                                    Cali - Colombia - South America<br>                    
                                     josedavidgm1995@gmail.com<br>
                                     JOSE DAVID GIRALDO M.
                                     </p>
@@ -111,16 +110,72 @@ let vista = {
         return div;
     },
 
+    getProjectModal: function getProjectModal(project) {
+        let div = document.createElement('div');
+        div.className = 'modalProject';
+        div.innerHTML = `
+            <div class="modalProjectContent">
+                
+                <div class="modalImage">
+                    <div class="imageColum">
+                    <img src=${project.photoA} alt="project-img">
+                    <img src=${project.photoB} alt="project-img">
+                    <img src=${project.photoC} alt="project-img">
+                    <img src=${project.photoA} alt="project-img">
+                    <img src=${project.photoB} alt="project-img">
+        
+                    </div>
+                </div>
+                <div class="modalInfo">
+                <div id="closeModal"><p>Back</p></div>
+                <h1>${project.title}</h1>
+                    <h2>${project.tags}</h2>
+                    <p>${project.info}</p>
+                    <br><br>
+                    <a href="https://www.behance.net/gallery/${project.behanceRute}" target="_blank">
+                    <h2>See more on Behance ></h2>
+                    </a>
+                </div>
+            </div>
+
+        `;
+        let m = div.querySelector('.modalImage');
+        
+        let a = 0;
+        let b = 900;
+
+        let e = () => {
+            if (a < b) {
+                a++;
+                console.log(a);
+                m.scrollTop += 1;
+                setTimeout(e, 25);
+            } else {
+                m.scrollTop = 0;
+                a = 0;
+                setTimeout(e, 25);
+            }
+
+        };
+        e();
+
+        let back = div.querySelector('#closeModal');
+        back.addEventListener('click',e=>{
+            div.style.display="none";
+        });
+
+        return div;
+    },
+
     render: function render(intro) {
         console.log("Hi there, welcome to my code");
         this.body.appendChild(this.getMainContainer());
         let content = this.body.querySelector('.content');
         content.appendChild(intro);
 
-        let item = vista.body.querySelector('.menu li');
+        /*let item = vista.body.querySelector('.menu li');
         item.style.backgroundColor = "rgb(255, 0, 51)";
-        item.style.boxShadow = "0px 5px 5px rgb(20,20,20)";
-
+        item.style.boxShadow = "0px 5px 5px rgb(20,20,20)";*/
 
     },
 
@@ -128,8 +183,11 @@ let vista = {
         let content = this.body.querySelector('.content');
         content.innerHTML = '';
         content.appendChild(newContent);
+    },
 
-
+    renderModal: function renderModal(project) {
+        let content = this.body.querySelector('.content');
+        this.body.appendChild(this.getProjectModal(project));
     },
 
 

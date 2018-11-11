@@ -23,10 +23,16 @@ function controler (vista) {
                 e.style.boxShadow="0px 5px 5px rgba(20,20,20,1)";
             }else{
                 e.style.backgroundColor="rgba(255, 255, 51,0)";
+                //e.style.backgroundColor="none";
                 e.style.boxShadow="0px 10px 10px rgba(15,15,15,0)";
             }
         });
        
+    }
+
+    cv.onShowProjectModalView = (project) =>{
+        console.log(project);
+        vista.renderModal(project);
     }
 
     vista.render(funciones[0]);
